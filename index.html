@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROOMEASEE - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="login-page">
+    <div class="login-container">
+      <h2>Login to ROOMEASEE</h2>
+
+      <input type="email" id="emailInput" placeholder="Enter your VIT email" required>
+      <span id="emailError" class="error-message">The entered email is not a VIT email. Please enter your VIT mail ID.</span>
+      
+      <div id="otpSentNotification" class="toast">OTP sent successfully</div>
+
+      <button id="sendOtpBtn">Send OTP</button>
+
+      <input type="text" id="otpInput" placeholder="Enter OTP" required style="display:none;">
+      <button id="loginBtn" style="display:none;">Login</button>
+
+      <button id="resendOtpBtn" style="display:none;">Resend OTP</button>
+    </div>
+  </div>
+
+  <div id="main-menu">
+    <header>
+      <h1>ROOMEASEE</h1>
+      <p>Helping College Students with Accommodation Complaints</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#complaint">File Complaint</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section id="complaint">
+        <div class="complaint-form">
+          <h2>File a Complaint</h2>
+          <form id="complaintForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="room">Room Number:</label>
+            <input type="text" id="room" placeholder="Enter your room number" required>
+
+            <label for="category">Category:</label>
+            <select id="category">
+              <option value="ac_repair">AC/Fan Repair</option>
+              <option value="water_cooler">Water Cooler Issue</option>
+              <option value="room_cleaning">Room Cleaning</option>
+              <option value="maintenance">General Maintenance</option>
+            </select>
+
+            <label for="message">Description:</label>
+            <textarea id="message" rows="5" placeholder="Describe the issue..." required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 ROOMEASEE - All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
