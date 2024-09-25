@@ -43,6 +43,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .login-container button:hover {
@@ -139,7 +140,9 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.complaint-form input, .complaint-form textarea, .complaint-form select {
+.complaint-form input,
+.complaint-form textarea,
+.complaint-form select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
